@@ -7,31 +7,32 @@ header  a:link {
 
 
 /* Header section formatting */
-header section {
+header {
   font-family: 'Clicker Script';
   font-size: 25px;
   vertical-align: top;
   display: inline-block;
-  height: 75px;
+  height: 15%;
   background-color: pink;
+  position: fixed;
+  top: 0px;
+  width: 100%;
   /*border: black 1px solid;*/
 }
 
 /* "Meowspace" in header */
 .header-left {
-  text-align: center;
-  margin: 10px;
-  width: 45%;
+  float: left;
+  margin-left: 10%;
 }
 
 /* Header navigation bar formatting */
 .header-right {
   float: right;
-  text-align: center;
-  margin: 10px;
-  width: 45%;
+  margin-right: 10%;
 }
 
+/* Formatting nav bar links */
 nav li {
   display: inline-block;
   padding: 8px;
@@ -44,6 +45,7 @@ nav li {
   margin-top: px;
 }*/
 
+/* Title section cat image */
 .title-section {
   background-image: url("../assets/hero.jpg");
   /*background-size: contain;*/
@@ -52,8 +54,11 @@ nav li {
   height: 600px;
   width: 100%;
   vertical-align: middle;
+  margin-top: 8%;
+  /*line-height: 300px;*/
 }
 
+/* Site title */
 .title {
   text-align: center;
   font-family: 'Clicker Script';
@@ -61,26 +66,100 @@ nav li {
   color: white;
 }
 
+/* h2 throughout site */
 h2 {
-  text-align: center;
+  /*text-align: center;*/
   font-size: 50px;
   font-family: 'Clicker Script';
   color: blue;
 }
 
-article {
+/* Article posts */
+main article {
   border-style: solid;
   border-radius: 15%;
+  border-color: pink;
   display: inline-block;
   width: 20%;
-  height: 40%;
+  height: 250px;
   border: 3%;
   margin: 10px;
   padding: 1.5%;
-  align-content: center;
+  align-self: center;
+  text-align: center;
+  vertical-align: top;
 }
 
+/* Articles section */
 .articles {
-  /*align-items: center;*/
+  align-items: center;
+  text-align: left;
+  padding-left: 10%;
+}
+
+/* "Popular Posts" */
+.articles h2 {
   text-align: center;
+  padding-right: 10%;
+}
+
+/* Border for "Learn more" in articles */
+a[href*="#post"] {
+  border-style: solid;
+  border-radius: 35%;
+  border-color: pink;
+  color: black;
+  padding: 2%;
+  padding-right: 15%;
+  padding-left: 15%;
+  align-self: center;
+  text-decoration: none;
+}
+
+.join {
+  margin-top: 2%;
+  text-align: center;
+  border-style: solid;
+  border-color: pink;
+  padding: 3%;
+  /*display: inline-block;*/
+}
+
+.join h2 {
+  text-align: center;
+}
+
+.join-text {
+  float: left;
+  width: 20%;
+  /*border-style: solid;*/
+  /*border-width: thin;*/
+  margin-left: 15%;
+}
+
+.cat-picture {
+  float: right;
+  height: 300px;
+  /*border-style: solid;*/
+  /*border-width: thin;*/
+  margin-right: 15%;
+}
+
+.promotion {
+  overflow: auto;
+  background-image: url("../assets/everybody.jpg");
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.promotion h2 {
+  text-align: center;
+  font-size: 200px;
+}
+
+.clearfix:after {
+  content:" ";
+  display:table;
+  clear:both;
 }
